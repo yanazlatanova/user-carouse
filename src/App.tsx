@@ -1,9 +1,12 @@
+import { UsersProvider } from "./context/UserContext"
+import { Home } from "./pages/Home"
 
 function App() {
   return (
-    <>
+    <UsersProvider>
       <h1>User Carousel</h1>
-    </>
+      <Home />
+    </UsersProvider>
   )
 }
 
