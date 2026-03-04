@@ -1,14 +1,7 @@
-import React, { createContext, useState, useEffect, useCallback} from 'react'
-import { fetchUsers } from '../api/users'
-import type { User } from '../types/user'
-
-export type UsersContextValue = {
-  data?: User[]
-  isLoading: boolean
-  isError: boolean
-}
-
-const UsersContext = createContext<UsersContextValue | undefined>(undefined)
+import React, { useState, useEffect, useCallback} from 'react'
+import { fetchUsers } from '../../api/users'
+import type { User } from '../../types/user'
+import UsersContext from './UsersContext'
 
 export const UsersProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
     const [data, setData] = useState<User[] | undefined>()
@@ -40,13 +33,3 @@ export const UsersProvider: React.FC<React.PropsWithChildren<{}>> = ({ children 
     </UsersContext.Provider>
   )
 }
-
-export const useUsers = (): UsersContextValue => {
-    const context = React.useContext(UsersContext)
-    if(!context) {
-        throw new Error('useUsers must be used within a UsersProvider')
-    }
-    return context
-}
-
-export default UsersContext

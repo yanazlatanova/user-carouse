@@ -1,4 +1,4 @@
-import { UsersProvider } from "./context/UserContext"
+import { UsersProvider } from "./context/users/index";
 import { Home } from "./pages/Home"
 
 function App() {

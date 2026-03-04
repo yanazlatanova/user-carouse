@@ -1,4 +1,4 @@
-import { useUsers } from "../context/UserContext";
+import { useUsers } from "../context/users/index";
 import type { User } from "../types/user";
 
 
