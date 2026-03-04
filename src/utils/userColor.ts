@@ -6,5 +6,5 @@ export function getUserColor(username: string): string {
     hash += username.charCodeAt(i) * (i + 1) // add position to create variation for similar usernames
   }
 
-  return `hsl(${(hash) % 360}, 70%, 55%)`
+  return `hsl(${(hash) % 360}, 90%, 75%)`
 }
