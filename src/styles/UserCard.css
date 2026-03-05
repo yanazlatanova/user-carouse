@@ -1,41 +1,63 @@
 
 .card {
   width: 300px;
-  border-radius: 5%;
-  overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+  background-color: #f3f1f1 !important;
   font-family: sans-serif;
 }
 
 .card-header {
-  padding: 16px;
+  padding: 22px;
   display: flex;
+  color: rgb(189, 78, 78);
   align-items: center;
   gap: 12px;
-  color: black;
 }
 
 .card-avatar {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  display: flex;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.6);
   align-items: center;
   justify-content: center;
+  display: flex;
+}
+
+.card-name {
   font-weight: 700;
+  color: rgb(22, 21, 21);
 }
 
-.card-name   { font-weight: 700; }
-.card-username { font-size: 12px; font-weight: 500; }
-.card-body { padding: 8px 16px 16px; }
+.card-username {
+  font-size: 12px;
+  font-weight: 800;
+  color: rgb(41, 39, 39);
+  font-size: 14px;
+  margin-top: 3px;
+  font-weight: 600;
+}
 
+.card-body {
+  padding: 6px 20px 20px;
+}
 
-.field       { padding: 6px 0; font-size: 13px;}
-.field-label { 
-  font-size: 10px; 
+.field {
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.field-label {
+  margin-bottom: 8px;
+  font-size: 10px;
   font-weight: 600; 
-  text-transform: uppercase; 
-  color: #646a72; 
+  letter-spacing: 0.8px;
+  text-transform: uppercase;  
+  color: #646a72;
 }
-.field a     { color: #2563eb; }
+
+.field-value a {
+  text-decoration: none;
+  color: #2563eb;
+}
