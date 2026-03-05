@@ -25,7 +25,7 @@ export const UserCard: React.FC<Props> = ({ user }) => {
   const mapsUrl = `https://www.google.com/maps?q=${user.address.geo.lat},${user.address.geo.lng}`;
 
   return (
-    <div className="card">
+    <div className="card" style={{ background: "white" }}>
       <div className="card-header" style={{ background: accent }}>
         <div className="card-avatar">{initials}</div>
         <div>
