@@ -21,7 +21,7 @@ export const CardRing: React.FC<Props> = ({ users }) => {
                 const radians = (i / userCount) * (Math.PI * 2)  // angle in radians not degrees       
                 const x = R * Math.sin(radians)
                 const z = R * Math.cos(radians)
-                const y = 0 // spin on the XY, rotate on the y and position on the same y ring position
+                const y = 0 // spin on the XZ, rotate on the y and position on the same y ring position
 
                 return (
                     <mesh key={user.id} position={[x, y, z]} rotation={[0, radians, 0]}>
